@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="GothamRoundedMedium_21022-2.ttf">
+            <string>GothamRounded-Medium</string>
+            <string>GothamRounded-Medium</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChangesImageViewController">
+            <connections>
+                <outlet property="displayImageView" destination="JQ0-Lz-1Es" id="PBH-cj-OKW"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.89000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rgp-bL-Kff">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LYg-fx-889">
+                    <rect key="frame" x="282" y="47" width="22" height="22"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="22" id="18I-xa-UQ4"/>
+                        <constraint firstAttribute="height" constant="22" id="KJg-lK-aP8"/>
+                    </constraints>
+                    <state key="normal" image="shapeCloseAddPost.png"/>
+                    <connections>
+                        <action selector="didTapOnCloseButton:" destination="-1" eventType="touchUpInside" id="xoM-Fh-Z1h"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ltD-92-aP1">
+                    <rect key="frame" x="16" y="95" width="288" height="378"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JQ0-Lz-1Es">
+                            <rect key="frame" x="0.0" y="0.0" width="288" height="378"/>
+                            <animations/>
+                        </imageView>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="JQ0-Lz-1Es" firstAttribute="leading" secondItem="ltD-92-aP1" secondAttribute="leading" id="SeJ-XJ-6DX"/>
+                        <constraint firstAttribute="bottom" secondItem="JQ0-Lz-1Es" secondAttribute="bottom" id="YVe-Md-2Ss"/>
+                        <constraint firstItem="JQ0-Lz-1Es" firstAttribute="top" secondItem="ltD-92-aP1" secondAttribute="top" id="iYQ-YN-JBm"/>
+                        <constraint firstAttribute="trailing" secondItem="JQ0-Lz-1Es" secondAttribute="trailing" id="s66-bf-4pO"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oJJ-6t-WTl">
+                    <rect key="frame" x="38" y="508" width="70" height="30"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="Gf0-7t-q0S"/>
+                        <constraint firstAttribute="height" constant="30" id="bOD-Yg-3D3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="18"/>
+                    <state key="normal" title="Change">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="didTapOnChangeButton:" destination="-1" eventType="touchUpInside" id="cOW-in-bOd"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mJI-I5-82V">
+                    <rect key="frame" x="208" y="508" width="74" height="30"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="SiL-BS-hXO"/>
+                        <constraint firstAttribute="width" constant="74" id="xfB-Y1-lHk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="18"/>
+                    <state key="normal" title="Remove">
+                        <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="didTapOnRemoveButton:" destination="-1" eventType="touchUpInside" id="dA6-ZD-hqL"/>
+                    </connections>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ltD-92-aP1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="95" id="0mM-Z1-KxH"/>
+                <constraint firstItem="ltD-92-aP1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="5sH-h9-d8N"/>
+                <constraint firstAttribute="trailing" secondItem="LYg-fx-889" secondAttribute="trailing" constant="16" id="Bzw-nf-kRp"/>
+                <constraint firstItem="rgp-bL-Kff" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="M5O-Rc-5eq"/>
+                <constraint firstAttribute="trailing" secondItem="mJI-I5-82V" secondAttribute="trailing" constant="38" id="OE7-2l-qu2"/>
+                <constraint firstAttribute="bottom" secondItem="oJJ-6t-WTl" secondAttribute="bottom" constant="30" id="PAl-qi-csm"/>
+                <constraint firstAttribute="trailing" secondItem="ltD-92-aP1" secondAttribute="trailing" constant="16" id="PCO-iD-ph8"/>
+                <constraint firstAttribute="trailing" secondItem="rgp-bL-Kff" secondAttribute="trailing" id="TPc-xT-bAc"/>
+                <constraint firstAttribute="bottom" secondItem="rgp-bL-Kff" secondAttribute="bottom" id="UEx-6a-6Dx"/>
+                <constraint firstAttribute="bottom" secondItem="ltD-92-aP1" secondAttribute="bottom" constant="95" id="bYk-or-c5E"/>
+                <constraint firstItem="oJJ-6t-WTl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="38" id="gZU-KI-3f2"/>
+                <constraint firstItem="LYg-fx-889" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="47" id="qJw-I6-ZRs"/>
+                <constraint firstItem="rgp-bL-Kff" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="tKs-yP-b9k"/>
+                <constraint firstAttribute="bottom" secondItem="mJI-I5-82V" secondAttribute="bottom" constant="30" id="wtw-ka-yxm"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="shapeCloseAddPost.png" width="22" height="23"/>
+    </resources>
+</document>
