@@ -1,10 +1,4 @@
-//
-//  createProfileViewController.h
-//  smartSample
-//
-//  Created by Leela Electronics on 22/12/15.
-//  Copyright (c) 2015 Leela Electronics. All rights reserved.
-//
+
 
 #import <UIKit/UIKit.h>
 #import "TLTagsControl.h"
@@ -32,7 +26,5 @@
 
 @property(nonatomic)BOOL otherSignUPstatus;
 @property(nonatomic)BOOL fbSignupStatus;
-
-
- @property(nonatomic,retain)NSData *imageData;
+@property(nonatomic,retain)NSData *imageData;
 @end

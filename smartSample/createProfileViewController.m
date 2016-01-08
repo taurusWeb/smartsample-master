@@ -1,10 +1,4 @@
-//
-//  createProfileViewController.m
-//  smartSample
-//
-//  Created by Leela Electronics on 22/12/15.
-//  Copyright (c) 2015 Leela Electronics. All rights reserved.
-//
+
 
 #import "createProfileViewController.h"
 #import "searchSchoolViewController.h"
