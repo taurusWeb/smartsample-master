@@ -113,6 +113,10 @@ BOOL fbSignUPButton=YES;
     self.loginMainButton.hidden = YES;
     self.createAcoountButton.hidden = NO;
     
+    _emailTextField.returnKeyType = UIReturnKeyDone;
+    _passwordTextField.returnKeyType = UIReturnKeyDone;
+
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -141,6 +145,7 @@ BOOL fbSignUPButton=YES;
     UIEdgeInsets contentInsets = UIEdgeInsetsMake(0.0, 0.0, kbSize.height, 0.0);
     self.signupScrollView.contentInset = contentInsets;
     self.signupScrollView.scrollIndicatorInsets = contentInsets;
+
 }
 
 // Called when the UIKeyboardWillHideNotification is sent
@@ -651,10 +656,7 @@ BOOL fbSignUPButton=YES;
             forumViewController *loginObject=[navc.viewControllers objectAtIndex:0];
             loginObject.fbLoginStaus=YES;
             loginObject.otherLoginStatus=NO;
-            
-            [tabar setSelectedIndex:1];
-            
-            
+             tabar.selectedViewController = tabar.viewControllers [1];
         }
         else if (otherlogin==YES)
         {
@@ -665,7 +667,7 @@ BOOL fbSignUPButton=YES;
             loginObject.otherLoginStatus=YES;
             loginObject.fbLoginStaus=NO;
             
-            [tabar setSelectedIndex:1];
+             tabar.selectedViewController = tabar.viewControllers [1];
             
             
         }

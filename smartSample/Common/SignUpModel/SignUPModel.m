@@ -6,7 +6,6 @@
 @implementation SignUPModel
 {
     NSDictionary*submitDictionary;
-    
 }
 
 //user login

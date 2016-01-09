@@ -1,13 +1,9 @@
-//
-//  addPostViewController.m
-//  
-//
-//  Created by Leela Electronics on 30/12/15.
-//
-//
+
 
 #import "addPostViewController.h"
 #import "ChangesImageViewController.h"
+#import "UIImage+Blurr.h"
+#import "PostModel.h"
 
 @interface addPostViewController ()<UIImagePickerControllerDelegate, UINavigationControllerDelegate, imagesChangeDelegate,UITextFieldDelegate,UITextViewDelegate>
 {
@@ -21,32 +17,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 
-//    UIVisualEffect *blurEffect;
-//    blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleDark];
-//    
-//    UIVisualEffectView *visualEffectView;
-//    visualEffectView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
-//    visualEffectView.alpha = 0.5;
-//    
-//    visualEffectView.frame = self.view.bounds;
-//    [self.view addSubview:visualEffectView];
+    self.backgroundImageView.image  = [UIImage convertViewToImage:self.view];
     
-//    UIGraphicsBeginImageContext(self.view.bounds.size);
-//    [self.view drawViewHierarchyInRect:self.view.bounds afterScreenUpdates:YES];
-//    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
-//    UIGraphicsEndImageContext();
-//    UIImage* imageOfUnderlyingView = image;
-//    imageOfUnderlyingView = [imageOfUnderlyingView applyBlurWithRadius:20
-//                                                             tintColor:[UIColor colorWithWhite:1.0 alpha:0.2]
-//                                                 saturationDeltaFactor:1.3
-//                                                             maskImage:nil];
-//    self.view.backgroundColor = [UIColor clearColor];
-//    UIImageView* backView = [[UIImageView alloc] initWithFrame:self.view.frame];
-//    backView.image = imageOfUnderlyingView;
-//    backView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.6];
-//    [self.view addSubview:backView];
-    
-    
+    self.backgroundImageView.image = [self.backgroundImageView.image  blurredImageWithRadius:3.5   iterations:1 tintColor:[UIColor blackColor]];
     
     self.postButton.alpha = 0.5;
     
@@ -82,6 +55,10 @@
     [self.descriptionTextView addSubview:placeHolderLabel];
     UITapGestureRecognizer * gesture = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(didTapOntapGesture:)];
     [self.view addGestureRecognizer:gesture];
+    
+    
+    _subjectsArray=[[NSArray alloc]initWithObjects:@"MathematicsHL",@"MathematicsSL",@"Science SL", nil];
+    _addPostSubjectTable.hidden=YES;
     
 }
 
@@ -192,9 +169,61 @@
     [picker dismissViewControllerAnimated:YES completion:NULL];
     
 }
+#pragma mark - UITableview DelegateMethods
 
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return  1;
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+   
+    return [_subjectsArray count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+ 
+    static NSString *cellidentifier=@"addPostCellId";
+    UITableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:cellidentifier];
+    if(cell==nil)
+    {
+        [[NSBundle mainBundle]loadNibNamed:@"addPostCell" owner:self options:nil];
+        cell=_postSubjectCell;
+        cell.accessoryView = nil;
+        
+    }
+    
+    _cellSubject.text=[self.subjectsArray objectAtIndex:indexPath.row];
+    
+    return cell;
+
+    
+}
+-(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+   // [tableView deselectRowAtIndexPath:indexPath animated:YES];
+ //  _discussionTypeLabel.text=self.subjectsArray[indexPath.row];
+    
+    NSLog(@"selected");
+    
+    _addPostSubjectTable.hidden=YES;
+    
+    _postButtonOulet.hidden=NO;
+    _notifyHeadLabel.hidden=NO;
+    _switchIcon.hidden=NO;
+
+  
+}
 
 #pragma mark - UIButton Actions
+
+- (IBAction)switchIcon:(id)sender {
+}
 
 - (IBAction)didTapOnCameraButton:(UIButton *)sender
 {
@@ -229,14 +258,61 @@
 
 - (IBAction)didTapOnDiscussionbutton:(UIButton *)sender
 {
+    
+    _addPostSubjectTable.hidden=NO;
+    
+    _postButtonOulet.hidden=YES;
+    _notifyHeadLabel.hidden=YES;
+    _switchIcon.hidden=YES;
+    
+    
 }
 
 - (IBAction)didTapOnNotificationSwitch:(UISwitch *)sender
 {
+    if(self.switchIcon.on)
+    {
+        self.notificaionStatus=@"1";
+    }
+    else
+    {
+        self.notificaionStatus=@"0";
+    }
 }
 
 - (IBAction)didTapOnPostButton:(UIButton *)sender
 {
+   
+    CGSize newSize=CGSizeMake(60, 60);
+    UIGraphicsBeginImageContextWithOptions(newSize, NO, 0.0);
+    [_imageShowImageView.image drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];
+        UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+        UIGraphicsEndImageContext();
+        NSData *post_imageData= UIImagePNGRepresentation(newImage);
+    
+    //post_imageData
+    //self.notificaionStatus
+    //_titleTextField.text
+   // _descriptionTextView.text
+    //subjectss
+    
+ 
+    
+    PostModel *postObj=[[PostModel alloc]init];
+    
+    NSDictionary *postDictionary=[postObj add_post:_titleTextField.text post_content:_descriptionTextView.text post_image:post_imageData subject:@"1"];
+    
+    
+    NSNumber *status = [postDictionary valueForKey:@"status_code"];
+    
+    if ([status isEqualToNumber:@1])
+    {
+        [[[UIAlertView alloc]initWithTitle:@"add post successfully  ...!" message:nil delegate:nil cancelButtonTitle:@"ok" otherButtonTitles:nil, nil]show];
+    }
+    else
+    {
+        [[[UIAlertView alloc]initWithTitle:@"Error for adding post  ...!" message:nil delegate:nil cancelButtonTitle:@"ok" otherButtonTitles:nil, nil]show];
+    }
 }
 
 - (IBAction)didTapOnImageShowButton:(UIButton *)sender

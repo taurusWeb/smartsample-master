@@ -19,9 +19,17 @@
     NSArray * dataArray = [[NSArray alloc]init];
     if (!(returnData == nil))
     {
+        NSError *error = nil;
+        dataArray = [NSJSONSerialization JSONObjectWithData:returnData options:kNilOptions error:&error];
         
-        dataArray  = [NSJSONSerialization JSONObjectWithData:returnData options:kNilOptions error:&error];
-        
+        if (error != nil)
+        {
+            NSLog(@"Error parsing JSON.");
+        }
+        else
+        {
+            NSLog(@"Array: %@", dataArray);
+        }
     }
     return dataArray;
 }

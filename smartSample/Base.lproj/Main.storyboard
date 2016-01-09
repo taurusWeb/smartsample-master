@@ -815,7 +815,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PbR-h0-wRM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1154" y="923"/>
+            <point key="canvasLocation" x="1180" y="1025"/>
         </scene>
         <!--Search School View Controller-->
         <scene sceneID="UUo-5k-HX1">
@@ -1123,7 +1123,7 @@
                                     <constraint firstAttribute="trailing" secondItem="gvc-EZ-iPz" secondAttribute="trailing" constant="8" id="txg-PM-TfY"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="50" sectionHeaderHeight="10" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="MH5-XF-nvz">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="50" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="MH5-XF-nvz">
                                 <rect key="frame" x="0.0" y="108" width="320" height="411"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
@@ -1148,16 +1148,7 @@
                                                         <constraint firstAttribute="width" constant="4" id="ebd-lf-eF0"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Labelyhgfg" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ms2-la-seE">
-                                                    <rect key="frame" x="37" y="18" width="257" height="18"/>
-                                                    <animations/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="18" id="ffy-Ud-LBm"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="15"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Labely" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pDX-g7-h0K">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pDX-g7-h0K">
                                                     <rect key="frame" x="37" y="36" width="257" height="10"/>
                                                     <animations/>
                                                     <constraints>
@@ -1175,7 +1166,7 @@
                                                         <constraint firstAttribute="height" constant="4" id="z9X-Au-gHp"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bqW-7y-yyS">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bqW-7y-yyS">
                                                     <rect key="frame" x="37" y="54" width="257" height="18"/>
                                                     <animations/>
                                                     <constraints>
@@ -1184,7 +1175,7 @@
                                                     <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="15"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GuI-nb-cfl">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GuI-nb-cfl">
                                                     <rect key="frame" x="37" y="72" width="257" height="10"/>
                                                     <animations/>
                                                     <constraints>
@@ -1202,7 +1193,7 @@
                                                         <constraint firstAttribute="width" constant="4" id="ZPP-1e-L40"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kkv-ZX-3vE">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kkv-ZX-3vE">
                                                     <rect key="frame" x="37" y="90" width="257" height="18"/>
                                                     <animations/>
                                                     <constraints>
@@ -1211,7 +1202,7 @@
                                                     <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="15"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u0E-le-3Hm">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u0E-le-3Hm">
                                                     <rect key="frame" x="37" y="108" width="257" height="10"/>
                                                     <animations/>
                                                     <constraints>
@@ -1229,7 +1220,7 @@
                                                         <constraint firstAttribute="height" constant="4" id="yn5-JG-vjf"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Umq-Mc-Eml">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Umq-Mc-Eml">
                                                     <rect key="frame" x="37" y="126" width="257" height="18"/>
                                                     <animations/>
                                                     <constraints>
@@ -1238,13 +1229,22 @@
                                                     <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="15"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WfM-tL-uwg">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WfM-tL-uwg">
                                                     <rect key="frame" x="37" y="144" width="257" height="10"/>
                                                     <animations/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="10" id="vea-Ci-dta"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="GothamRounded-Book" family="Gotham Rounded" pointSize="9"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ms2-la-seE">
+                                                    <rect key="frame" x="37" y="18" width="257" height="18"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="18" id="ffy-Ud-LBm"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="15"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -1318,7 +1318,7 @@
                                                     <animations/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lkjfghk" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wF3-CM-cWE">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wF3-CM-cWE">
                                                     <rect key="frame" x="16" y="7" width="263" height="22"/>
                                                     <animations/>
                                                     <constraints>
@@ -1328,7 +1328,7 @@
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCa-Eb-qbW">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCa-Eb-qbW">
                                                     <rect key="frame" x="16" y="32" width="263" height="11"/>
                                                     <animations/>
                                                     <constraints>
@@ -1474,7 +1474,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="azn-ib-VEv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="732" y="941"/>
+            <point key="canvasLocation" x="807" y="1002"/>
         </scene>
         <!--Favorites View Controller-->
         <scene sceneID="IsP-C1-0zv">
@@ -1608,6 +1608,10 @@
                                         </tableViewCellContentView>
                                         <animations/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="mainHeadLabel" destination="jG5-bC-2Fc" id="uYZ-pq-vEN"/>
+                                            <outlet property="subHeadLabel" destination="EVU-fh-qsK" id="uD4-7O-L52"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -1629,10 +1633,13 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="favoritesTableView" destination="eWB-j3-c3S" id="0RQ-9e-BJI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lHG-Sv-smj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="732" y="3152"/>
+            <point key="canvasLocation" x="561" y="3170"/>
         </scene>
         <!--Add Post View Controller-->
         <scene sceneID="tZ3-vQ-gFS">
@@ -1651,7 +1658,7 @@
                                 <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </imageView>
-                            <view alpha="0.89000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YC3-J5-hD9">
+                            <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YC3-J5-hD9">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -1795,6 +1802,18 @@
                                                             <action selector="didTapOnDiscussionbutton:" destination="Vfi-TK-dv2" eventType="touchUpInside" id="Zcr-OB-91D"/>
                                                         </connections>
                                                     </button>
+                                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7Pu-Id-Jf7">
+                                                        <rect key="frame" x="32" y="335" width="240" height="121"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="121" id="nTf-HV-zHW"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <outlet property="dataSource" destination="Vfi-TK-dv2" id="Wpc-Dv-QsH"/>
+                                                            <outlet property="delegate" destination="Vfi-TK-dv2" id="yi0-YX-9FD"/>
+                                                        </connections>
+                                                    </tableView>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jLa-1r-esC">
                                                         <rect key="frame" x="240" y="344" width="51" height="31"/>
                                                         <animations/>
@@ -1837,6 +1856,7 @@
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstItem="WYh-Qg-pqo" firstAttribute="top" secondItem="9GA-HF-opx" secondAttribute="bottom" constant="47" id="0yD-xx-0Eo"/>
+                                                    <constraint firstItem="7Pu-Id-Jf7" firstAttribute="top" secondItem="kXB-Pf-R61" secondAttribute="bottom" constant="2" id="4Gt-Ps-Hb1"/>
                                                     <constraint firstAttribute="bottom" secondItem="LTw-Jf-SOQ" secondAttribute="bottom" constant="20" id="5DN-76-oFF"/>
                                                     <constraint firstAttribute="trailing" secondItem="LTw-Jf-SOQ" secondAttribute="trailing" constant="15" id="8aI-lV-72N"/>
                                                     <constraint firstItem="aff-Fz-p9q" firstAttribute="top" secondItem="9ID-UM-mK1" secondAttribute="bottom" constant="23" id="9Ta-EQ-wB5"/>
@@ -1850,7 +1870,9 @@
                                                     <constraint firstItem="raU-vm-Kag" firstAttribute="leading" secondItem="WOD-uI-PS4" secondAttribute="leading" constant="25" id="Knq-rf-c8F"/>
                                                     <constraint firstItem="LTw-Jf-SOQ" firstAttribute="leading" secondItem="WOD-uI-PS4" secondAttribute="leading" constant="15" id="L4N-ex-gUg"/>
                                                     <constraint firstItem="raU-vm-Kag" firstAttribute="top" secondItem="WOD-uI-PS4" secondAttribute="top" constant="29" id="Mec-PV-LG9"/>
+                                                    <constraint firstAttribute="trailing" secondItem="7Pu-Id-Jf7" secondAttribute="trailing" constant="32" id="OYh-An-HNY"/>
                                                     <constraint firstItem="9ID-UM-mK1" firstAttribute="top" secondItem="WOD-uI-PS4" secondAttribute="top" constant="23" id="Oph-CZ-c5L"/>
+                                                    <constraint firstItem="7Pu-Id-Jf7" firstAttribute="leading" secondItem="WOD-uI-PS4" secondAttribute="leading" constant="32" id="RuH-Mo-MPk"/>
                                                     <constraint firstItem="unr-TP-h2a" firstAttribute="leading" secondItem="WOD-uI-PS4" secondAttribute="leading" constant="20" id="Ud2-k0-YJA"/>
                                                     <constraint firstItem="IwU-t6-vjL" firstAttribute="leading" secondItem="WOD-uI-PS4" secondAttribute="leading" constant="25" id="VCp-UE-ZQi"/>
                                                     <constraint firstAttribute="trailing" secondItem="9ID-UM-mK1" secondAttribute="trailing" constant="15" id="XVy-8W-Kkw"/>
@@ -1940,6 +1962,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="addPostSubjectTable" destination="7Pu-Id-Jf7" id="5LJ-QL-mIA"/>
                         <outlet property="attachPhotoButton" destination="Pot-IN-Rh3" id="wIB-zb-eIG"/>
                         <outlet property="backgroundImageView" destination="Eek-X5-gnm" id="T6T-3D-BwI"/>
                         <outlet property="backgroundView" destination="YC3-J5-hD9" id="acq-Y5-iSW"/>
@@ -1948,9 +1971,12 @@
                         <outlet property="discussionTypeLabel" destination="IwU-t6-vjL" id="x8d-eu-blK"/>
                         <outlet property="imageShowButton" destination="u3K-SU-YXa" id="OM9-Kv-Tbi"/>
                         <outlet property="imageShowImageView" destination="uH2-nE-j7B" id="Gk9-fi-bua"/>
+                        <outlet property="notifyHeadLabel" destination="unr-TP-h2a" id="7Zh-HI-QQG"/>
                         <outlet property="postButton" destination="LTw-Jf-SOQ" id="Tw4-qk-aBh"/>
+                        <outlet property="postButtonOulet" destination="LTw-Jf-SOQ" id="IkF-Fy-HXr"/>
                         <outlet property="postScrollView" destination="hX5-R3-YZE" id="TKb-gh-QCB"/>
                         <outlet property="scrollBackgroundView" destination="m0c-9f-ReC" id="5ow-xw-r8G"/>
+                        <outlet property="switchIcon" destination="jLa-1r-esC" id="2fo-Zz-Krb"/>
                         <outlet property="textBackgroundImageView" destination="aff-Fz-p9q" id="y9E-oW-Y9c"/>
                         <outlet property="titleTextField" destination="raU-vm-Kag" id="fkZ-El-6XG"/>
                     </connections>
@@ -2091,7 +2117,9 @@
         <scene sceneID="5Tb-Tv-iMJ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0jc-ZT-VgR" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="News Feed" image="newsfeedIconDeactive.png" badgeValue="1" id="1M7-CF-zCT"/>
+                    <tabBarItem key="tabBarItem" title="News Feed" image="newsfeedIconDeactive.png" badgeValue="1" id="1M7-CF-zCT">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-4"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Un9-eD-bFh">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -2107,11 +2135,13 @@
             </objects>
             <point key="canvasLocation" x="300" y="1709"/>
         </scene>
-        <!--forum-->
+        <!--Forum-->
         <scene sceneID="648-eh-4o8">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8l8-lg-6aC" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="forum" image="forumIconActive.png" id="LPt-Q5-JSf"/>
+                    <tabBarItem key="tabBarItem" title="Forum" image="forumIconDeactive.png" id="LPt-Q5-JSf">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-4"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vPb-N0-Izi">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -2131,7 +2161,9 @@
         <scene sceneID="jQ8-jO-ADH">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dTw-0h-Dd8" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" image="profileIconDeactive.png" id="2Tr-GA-gJ2"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="profileIconDeactive.png" id="2Tr-GA-gJ2">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-4"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2re-t6-8me">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -2154,7 +2186,7 @@
         <image name="chevron.png" width="8" height="12"/>
         <image name="emptydataSchool.png" width="181" height="194"/>
         <image name="emptydataSubject.png" width="206" height="181"/>
-        <image name="forumIconActive.png" width="23" height="21"/>
+        <image name="forumIconDeactive.png" width="24" height="22"/>
         <image name="iconCamera.png" width="78" height="78"/>
         <image name="iconRemove.png" width="8" height="3"/>
         <image name="inputFieldBlueBGCopy.png" width="275" height="41"/>
@@ -2178,6 +2210,6 @@
         <image name="triangle4.png" width="20" height="11"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="NZp-ak-XXB"/>
+        <segue reference="ki9-Wr-gjl"/>
     </inferredMetricsTieBreakers>
 </document>

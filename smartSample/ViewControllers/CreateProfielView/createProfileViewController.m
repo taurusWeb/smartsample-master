@@ -1,4 +1,10 @@
-
+//
+//  createProfileViewController.m
+//  smartSample
+//
+//  Created by Leela Electronics on 22/12/15.
+//  Copyright (c) 2015 Leela Electronics. All rights reserved.
+//
 
 #import "createProfileViewController.h"
 #import "searchSchoolViewController.h"
@@ -148,6 +154,7 @@
 
 - (BOOL) textFieldShouldEndEditing:(UITextField *)textField
 {
+    
     if(textField == self.userNameTexdtField)
     {
         SignUPModel *userNameCheking=[[SignUPModel alloc]init];
@@ -159,10 +166,15 @@
         }
         else
         {
+            if([textField.text isEqualToString:@""])
+            {
+                self.usernameCheckImageView.image =nil;
+            }
+            else
+            {
             self.usernameCheckImageView.image = [UIImage imageNamed:@"shapeUserNot"];
+            }
         }
-       
-        
     }
     return  YES;
 }
@@ -180,6 +192,11 @@
     {
         searchSchoolViewController *viewController = (searchSchoolViewController *)[segue destinationViewController];
         viewController.delegate = self;
+    }
+    else if([[segue identifier]isEqualToString:@"createToMainPageSegue"])
+    {
+        UITabBarController *tabar=segue.destinationViewController;
+        tabar.selectedViewController = tabar.viewControllers [1];
     }
     
 }
